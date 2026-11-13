@@ -757,8 +757,6 @@ export default function startListeners() {
 }
 
 function resizeTabs() {
-    const $ = window.$
-    if (!$ || !$('body').length) return
     const $windowsize = $('body').width()
     const $sideBarsize = $('.side').width()
     const $maxwidth = $windowsize - $sideBarsize
